@@ -420,14 +420,6 @@ Wire Wire Line
 	6400 3900 6400 4150
 Wire Wire Line
 	6700 3450 6700 3600
-Wire Wire Line
-	2250 3950 2250 3850
-Wire Wire Line
-	2250 3850 2450 3850
-Wire Wire Line
-	2250 4050 2250 4150
-Wire Wire Line
-	2250 4150 2450 4150
 $Comp
 L Device:Q_NMOS_GDS Q8
 U 1 1 5D040727
@@ -493,17 +485,6 @@ F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 3900 3700 50  0001 C CNN
 F 3 "~" H 3700 3600 50  0001 C CNN
 	1    3700 3600
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J2
-U 1 1 5D17CFD6
-P 2050 3950
-F 0 "J2" H 1968 4075 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 2130 3851 50  0001 L CNN
-F 2 "Connector_Wire:SolderWire-2sqmm_1x02_P7.8mm_D2mm_OD3.9mm" H 2050 3950 50  0001 C CNN
-F 3 "~" H 2050 3950 50  0001 C CNN
-	1    2050 3950
-	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J3
@@ -881,8 +862,27 @@ F 3 "~" H 2450 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2450 3850 2700 3850
-Connection ~ 2450 3850
 Wire Wire Line
 	2450 4150 2700 4150
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5F5E295B
+P 2050 3950
+F 0 "J2" H 1968 4075 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 2130 3851 50  0001 L CNN
+F 2 "Connector_Wire:SolderWire-2sqmm_1x02_P7.8mm_D2mm_OD3.9mm" H 2050 3950 50  0001 C CNN
+F 3 "~" H 2050 3950 50  0001 C CNN
+	1    2050 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3950 2250 3850
+Wire Wire Line
+	2250 3850 2450 3850
+Connection ~ 2450 3850
+Wire Wire Line
+	2450 4150 2250 4150
+Wire Wire Line
+	2250 4150 2250 4050
 Connection ~ 2450 4150
 $EndSCHEMATC
